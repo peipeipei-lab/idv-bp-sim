@@ -114,11 +114,11 @@ const FORMATS = {
   round1: {
     name: "Round 1",
     steps: [
-      { side: "hunter", action: "ban", count: 2 },
+      { side: "survivor", action: "ban", count: 2 },
       { side: "survivor", action: "pick", count: 2 },
-      { side: "hunter", action: "ban", count: 1 },
+      { side: "survivor", action: "ban", count: 1 },
       { side: "survivor", action: "pick", count: 1 },
-      { side: "hunter", action: "ban", count: 1 },
+      { side: "survivor", action: "ban", count: 1 },
       { side: "survivor", action: "pick", count: 1 },
       { side: "hunter", action: "pick", count: 1 }
     ]
@@ -127,10 +127,12 @@ const FORMATS = {
   round2: {
     name: "Round 2",
     steps: [
-      { side: "hunter", action: "ban", count: 2 },
-      { side: "survivor", action: "ban", count: 1 },
-      { side: "survivor", action: "pick", count: 2 },
       { side: "hunter", action: "ban", count: 1 },
+      { side: "survivor", action: "ban", count: 2 },
+      { side: "survivor", action: "pick", count: 2 },
+      { side: "survivor", action: "ban", count: 1 },
+      { side: "survivor", action: "pick", count: 1 },
+      { side: "survivor", action: "ban", count: 1 },
       { side: "survivor", action: "pick", count: 1 },
       { side: "hunter", action: "pick", count: 1 }
     ]
@@ -338,5 +340,6 @@ function updateList(id, arr) {
   });
 
 }
+
 
 render();
