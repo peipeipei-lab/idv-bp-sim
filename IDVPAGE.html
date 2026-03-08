@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=Jacquarda+Bastarda+9+Charted&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="idvcss.css">
+  <meta charset="UTF-8">
+  <title>Identity V Draft Tool</title>
+
+</head>
+<body>
+
+
+<button id="bgCycleBtn">Change Background</button>
+
+<button id="resetButton" class="reset-button">
+  Reset
+</button>
+
+<div class="dropdown-container">
+  <button id="bpformat" class="dropdown-btn">
+    Choose Format ▼
+  </button>
+
+  <div id="bpformatdrop" class="dropdown-menu hidden">
+    <div class="dropdown-item">Custom Format</div>
+      <div class="dropdown-item" data-format="rank">Rank Format</div>
+      <div class="dropdown-item" data-format="round1">Round 1</div>
+      <div class="dropdown-item" data-format="round2">Round 2</div>
+      <div class="dropdown-item" data-format="round3">Round 3</div>
+  </div>
+</div>
+
+<p id="selectedFormat">No format selected. (Rank by default)</p>
+
+<h1>Identity V Draft Simulator</h1>
+
+<h2 id="phase"></h2>
+
+<h2>Hunters<br></h2>
+<div id="hunterss"></div>
+
+<h2>Survivors</h2>
+<div id="survivorss"></div>
+
+<h3>Survivor Bans</h3>
+<ul id="survivorBans"></ul>
+
+<h3>Hunter Bans</h3>
+<ul id="hunterBans"></ul>
+
+<h3>Survivor Picks</h3>
+<ul id="survivorPicks"></ul>
+
+<h3>Hunter Pick</h3>
+<ul id="hunterPick"></ul>
+
+<script src="idvjs.js"></script>
