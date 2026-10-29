@@ -55,6 +55,8 @@ const survivors = [
   { id: "escapologist", name: "Escapologist",},
   { id: "lanternist", name: "Lanternist",},
   { id: "matador", name: "Matador",},
+  { id: "mimeartist", name: "Mime Artist",},
+  { id: "prodigy", name: "Prodigy",},
   { id: "lucky_guy", name: "Lucky Guy",},
 ];
 const hunters = [
@@ -92,6 +94,8 @@ const hunters = [
   { id: "peddler", name: "Peddler"},
   { id: "cueist", name: "Cueist"},
   { id: "queen_bee", name: "Queen Bee"},
+  { id: "dentist", name: "Dentist"},
+  { id: "herztier", name: "Herztier"},
 ];
 
 const characters = [...survivors, ...hunters];
@@ -127,8 +131,8 @@ const FORMATS = {
   round2: {
     name: "Round 2",
     steps: [
-      { side: "hunter", action: "ban", count: 1 },
       { side: "survivor", action: "ban", count: 2 },
+      { side: "hunter", action: "ban", count: 1 },
       { side: "survivor", action: "pick", count: 2 },
       { side: "survivor", action: "ban", count: 1 },
       { side: "survivor", action: "pick", count: 1 },
@@ -142,8 +146,8 @@ const FORMATS = {
   round3: {
     name: "Round 3",
     steps: [
-      { side: "hunter", action: "ban", count: 2 },
       { side: "survivor", action: "ban", count: 2 },
+      { side: "hunter", action: "ban", count: 2 },
       { side: "survivor", action: "pick", count: 2 },
       { side: "survivor", action: "ban", count: 1 },
       { side: "survivor", action: "pick", count: 1 },
